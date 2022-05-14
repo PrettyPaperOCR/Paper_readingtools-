@@ -11,3 +11,7 @@ B. 剪下的Image論文區塊可以以編碼命名檔案名稱。 第1號論文I
 C.論文影像辨識Pillow(依據影像品質做前處理，可能用不到) 1.需要使用Pillow •BLUR (模糊) •CONTOUR (輪廓)
 
 2.•EDGE_ENHANCE (邊緣增強)•EDGE_ENHANCE_MORE(邊緣更增強) •SHARPEN (銳利化) 3.將圖片RGB的數值做轉換 from PIL import Image img = Image.open("RGB.jpg") width, height = img.size for y in range(height): for x in range(width): rgba = img.getpixel((x,y)) rgba = (255 - rgba[0], # R 255 - rgba
+
+[1], # G 255 - rgba[2] ) # B img.putpixel((x,y), rgba) img.show() img.save("RGB_new.png")
+
+D.Q&A: 可能不用openCV，但為什麼要用Machine Learning ?? Segmentation Label要用在哪?? OCR文字區塊辨識後的應用? 1.相同的研究方法 2.使用模型種類2.同類型摘要論文3. 同類型論文結論 是否論文依編碼1001 、 1002，而不要使用論文名稱?
