@@ -1,6 +1,7 @@
 # Paper_readingtools-
 Paper_readingtools 
-論文閱讀工具開發 5. OCR (3 people a group) • Extract text data from image data with the OCR technique after image pre-processing. • Skill Set: OCR (Tesseract), image processing, Machine Learning, python pdf parser and maybe some textual analysis
+論文閱讀工具開發 
+5. OCR (3 people a group) • Extract text data from image data with the OCR technique after image pre-processing. • Skill Set: OCR (Tesseract), image processing, Machine Learning, python pdf parser and maybe some textual analysis
 第四組Img Paper Paragraph Segmentation討論事項 OCR 英文 印刷文字辨識 ，字元識別， 論文段落，依照閱讀論文的瀏覽順序，去切割出每個subtitle底下的文字區塊。 
 A. Image論文，每一個文字區塊，邊緣完全切除不要留任何空白。以便進行 OpenCV 印刷文字image辨識。 
 有一些要先跟第四組Img Paper Paragraph Segmentation 討論，希望他們文字區塊邊緣不要留空白，1.each paragraph. 2.subtitle and content in each block.3. metadata, main title, and subtitle 存檔方式第1號論文Image區塊 ：1001 、 1002 、1003、1004、………..1999..
